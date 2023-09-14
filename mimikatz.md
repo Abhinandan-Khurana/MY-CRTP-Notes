@@ -7,16 +7,16 @@ description: About Modules and Commands
 ## Modules -
 
 * [`crypto`](mimikatz.md#crypto): This modules deals with the Microsoft Crypto Magic world.
-* [`dpapi`](mimikatz.md#dpapi): The Data Protection Application Programming Interface module. Consider this as an opsec safe option (for now) for getting credentials.
+* [`dpapi`](mimikatz.md#dpapi): The Data Protection Application Programming Interface module. Consider this as an opsec safe option for getting credentials.
 * [`event`](mimikatz.md#event): this module deals with the Windows Event logs (to clear footprints after compromise).
-* [`kerberos`](mimikatz.md#kerberos): This module deals with the Greek Mythology's three headed Hades dog without the help of Hercules.
+* [`kerberos`](mimikatz.md#kerberos): This module deals with the kerberos lol.
 * [`lsadump`](mimikatz.md#lsadump): this module contains some well known functionalities of Mimikatz such as DCSync, DCShadow, dumping of SAM and LSA Secrets.
 * [`misc`](mimikatz.md#misc): The miscellaneous module contains functionalities such as PetitPotam, PrintNightmare RPC Print Spooler and others.
 * [`net`](mimikatz.md#net): some functionalities in this module are similar to the Windows **net** commands. Enumerating sessions and servers configured with different types of Kerberos delegations is also included.
 * [`privilege`](mimikatz.md#privilege): This module deals with the Windows privileges. It includes the favorite debug privilege which holds the keys to LSASS.
 * [`process`](mimikatz.md#process): This module deal with Windows processes. It can also be used for process injection and parent process spoofing.
 * [`rpc`](mimikatz.md#rpc): The Remote Procedure Call module of Mimikatz. It can also be used for controlling Mimikatz remotely.&#x20;
-* [`sekurlsa`](mimikatz.md#sekurlsa): The most beloved module of Mimikatz. Even Benjamin has mentioned in the past that one day people will discover that Mimikatz is more than [`sekurlsa::logonpasswords`](broken-reference). Hope we made some effort on this Benjamin.
+* [`sekurlsa`](mimikatz.md#sekurlsa): The most beloved module of Mimikatz. Even the maker of Mimikatz (Benjamin) has mentioned in the past that one day people will discover that Mimikatz is more than [`sekurlsa::logonpasswords`](broken-reference).&#x20;
 * [`service`](mimikatz.md#service): This module can interact with Windows services plus installing the `mimikatzsvc` service.
 * [`sid`](mimikatz.md#sid):  This module deals with the Security Identifier.
 * [`standard`](mimikatz.md#standard): This module contains some general functionalities which are not related to exploitation.
