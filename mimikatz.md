@@ -249,3 +249,5 @@ description: About Modules and Commands
 
 * [`vault::cred`](broken-reference) enumerates vault credentials
 * [`vault::list`](broken-reference) lists saved credentials in the Windows Vault such as scheduled tasks, RDP, Internet Explorer for the current user
+
+credits - [https://tools.thehacker.recipes/mimikatz/modules](https://tools.thehacker.recipes/mimikatz/modules)
