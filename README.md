@@ -399,7 +399,7 @@ NOTE: This is very noisy, because it will leave 4624 logon and 4634 logoff on DC
 
 * So do not run it blindly, run it on a couple of compute like 100 or so.
 
-#### NOTE -
+#### NOTE - (Difference b/w Find-LocalAdminAccess and Find-PSRemotingLocalAdminAccess)
 
 ***
 
