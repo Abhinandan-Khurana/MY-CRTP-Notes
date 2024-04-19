@@ -399,7 +399,21 @@ NOTE: This is very noisy, because it will leave 4624 logon and 4634 logoff on DC
 
 * So do not run it blindly, run it on a couple of compute like 100 or so.
 
-#### Find computers where a domain admin (or specified user/group) has sessions -
+#### NOTE -
+
+***
+
+•⁠ ⁠They essentially do the same thing i.e., Finding Local Administrator Access rights for our current user in the network of AD
+
+•⁠ ⁠The main difference in output between these two commands comes from the methods and protocols they utilize.
+
+•⁠ ⁠`Find-LocalAdminAccess` is dependent on file share access, whereas `Find-PSRemotingLocalAdminAccess` depends on PowerShell Remoting (WinRM), which might be enabled or configured differently across various machines in a network.
+
+•⁠ ⁠Some machines might have file sharing enabled but not PowerShell Remoting, or vice versa.
+
+***
+
+Find computers where a domain admin (or specified user/group) has sessions -
 
 ```
 Find-DomainUserLocation -Verbose
