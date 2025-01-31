@@ -131,7 +131,41 @@ description: Critical Logon Events, Threat Detection Tactics, and OPSEC Best Pra
 * **DC Shadow Attacks**: Look for **Event ID 4662** (AD object restore) from non-DC hosts.
 * **Pass-the-Hash**: **NTLMv1** use in **4624** paired with **NetNTLMv1** relay in logs.
 
+***
+
 ### **Some Recommendations (BLUE TEAM)**
 
 * Deploy **Windows Event Forwarding (WEF)** to centralize logs.
 * Use **Sigma Rules** (e.g., "Admin Login Remote") to filter noise.
+
+### Some Monitoring Strategies:
+
+1. **Credential Theft Detection:**
+
+* Monitor LSASS access (Security Event 4656)
+* Track memory dump operations
+* Watch for Mimikatz signatures
+
+2. **Lateral Movement Indicators**:
+
+* Unusual remote logons
+* Pass-the-Hash patterns
+* WMI/PowerShell remote execution
+
+3. **Privilege Escalation:**
+
+* Token manipulation
+* DLL injection
+* Service exploitation
+
+4. **Persistence Mechanisms:**
+
+* New scheduled tasks
+* Service modifications
+* Registry autorun changes
+
+5. **Command and Control**:
+
+* Unusual outbound connections
+* DNS anomalies
+* PowerShell encodings

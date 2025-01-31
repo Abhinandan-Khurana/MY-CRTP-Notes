@@ -6,3 +6,4 @@
 * [Command Pallette](command-pallette.md)
 * [Mimikatz](mimikatz.md)
 * [Active Directory Security Logging](active-directory-security-logging.md)
+* [Critical event IDs cheatsheet](critical-event-ids-cheatsheet.md)
